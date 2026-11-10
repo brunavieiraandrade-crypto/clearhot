@@ -3,11 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Estúdio de Cílios | Tufinho vs Fio a Fio</title>
+  <title>Estúdio de Cílios | Especialistas em Extensão</title>
   <style>
     :root {
-      --primary-color: #d4a373; /* Tom nude/dourado elegante */
-      --secondary-color: #faedcd; /* Fundo suave */
+      --primary-color: #d4a373; 
+      --secondary-color: #faedcd; 
+      --accent-color: #bc6c25;
       --text-color: #333333;
       --whatsapp-color: #25D366;
     }
@@ -26,35 +27,40 @@
       color: white;
       text-align: center;
       padding: 3rem 1rem;
+      background-image: linear-gradient(rgba(212, 163, 115, 0.9), rgba(212, 163, 115, 0.9)), url('https://images.unsplash.com/photo-1512413914568-150280eb4c71?w=1200&q=80');
+      background-size: cover;
+      background-position: center;
     }
 
     header h1 {
       margin: 0;
-      font-size: 2.5rem;
+      font-size: 2.8rem;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
     }
 
     .container {
-      max-width: 1000px;
+      max-width: 1100px;
       margin: 0 auto;
       padding: 2rem 1rem;
     }
 
     section {
-      margin-bottom: 3rem;
+      margin-bottom: 4rem;
     }
 
     h2 {
       text-align: center;
-      color: var(--primary-color);
+      color: var(--accent-color);
       border-bottom: 2px solid var(--secondary-color);
       padding-bottom: 0.5rem;
       margin-bottom: 2rem;
+      font-size: 2rem;
     }
 
     /* Grid para as técnicas */
     .techniques-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 2rem;
     }
 
@@ -62,13 +68,18 @@
       background: white;
       border-radius: 12px;
       overflow: hidden;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
       border: 1px solid var(--secondary-color);
+      transition: transform 0.3s ease;
+    }
+
+    .technique-card:hover {
+      transform: translateY(-5px);
     }
 
     .technique-card img {
       width: 100%;
-      height: 250px;
+      height: 220px;
       object-fit: cover;
     }
 
@@ -78,130 +89,4 @@
 
     .technique-content h3 {
       margin-top: 0;
-      color: var(--primary-color);
-    }
-
-    /* Grid para os profissionais */
-    .professionals-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 1.5rem;
-    }
-
-    .professional-card {
-      background: white;
-      padding: 1.5rem;
-      border-radius: 12px;
-      text-align: center;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-    }
-
-    .professional-card img {
-      width: 120px;
-      height: 120px;
-      border-radius: 50%;
-      object-fit: cover;
-      margin-bottom: 1rem;
-      border: 3px solid var(--primary-color);
-    }
-
-    .btn-whatsapp {
-      display: inline-block;
-      background-color: var(--whatsapp-color);
-      color: white;
-      text-decoration: none;
-      padding: 0.8rem 1.5rem;
-      border-radius: 25px;
-      font-weight: bold;
-      margin-top: 1rem;
-      transition: background 0.3s;
-    }
-
-    .btn-whatsapp:hover {
-      background-color: #1ebc5a;
-    }
-
-    footer {
-      background-color: var(--text-color);
-      color: white;
-      text-align: center;
-      padding: 1.5rem;
-      margin-top: 2rem;
-    }
-  </style>
-</head>
-<body>
-
-  <header>
-    <h1>Guia das Extensões de Cílios</h1>
-    <p>Descubra a técnica perfeita para o seu olhar e encontre os melhores profissionais.</p>
-  </header>
-
-  <div class="container">
-    
-    <!-- SEÇÃO: TÉCNICAS -->
-    <section id="tecnicas">
-      <h2>Entenda as Diferenças</h2>
-      
-      <div class="techniques-grid">
-        <!-- Card Fio a Fio -->
-        <article class="technique-card">
-          <!-- Imagem de exemplo (placeholder) -->
-          <img src="https://images.unsplash.com/photo-1587775537593-376916e78070?w=500&q=80" alt="Exemplo de Cílios Fio a Fio">
-          <div class="technique-content">
-            <h3>Extensão Fio a Fio</h3>
-            <p><strong>O que é:</strong> Técnica clássica e delicada onde um único fio sintético é colado sobre cada cílio natural.</p>
-            <p><strong>O resultado:</strong> Proporciona um efeito de "rímel perfeito". É super natural, leve e ideal para quem busca alongar os fios sem exagerar no volume.</p>
-            <p><strong>Manutenção:</strong> Acompanha o ciclo natural de queda dos cílios (geralmente a cada 15 a 20 dias).</p>
-          </div>
-        </article>
-
-        <!-- Card Tufinho -->
-        <article class="technique-card">
-          <!-- Imagem de exemplo (placeholder) -->
-          <img src="https://images.unsplash.com/photo-1512413914568-150280eb4c71?w=500&q=80" alt="Exemplo de Cílios Tufinho">
-          <div class="technique-content">
-            <h3>Extensão em Tufinho</h3>
-            <p><strong>O que é:</strong> Aplicação de pequenos "buquês" ou tufos (grupos de 3 a 5 fios unidos na base) sobre os cílios naturais ou entre eles.</p>
-            <p><strong>O resultado:</strong> Entrega um volume expressivo e marcante muito mais rápido que outras técnicas. É perfeito para quem gosta de cílios bem cheios e chamativos.</p>
-            <p><strong>Cuidados:</strong> Exige um cuidado extra na aplicação e na limpeza para não pesar sobre o fio natural.</p>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <!-- SEÇÃO: PROFISSIONAIS -->
-    <section id="profissionais">
-      <h2>Nossos Profissionais de Destaque</h2>
-      
-      <div class="professionals-grid">
-        <!-- Profissional 1 (Com o número solicitado) -->
-        <article class="professional-card">
-          <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=300&q=80" alt="Foto da Lash Designer">
-          <h3>Amanda Lash Designer</h3>
-          <p>Especialista em Fio a Fio Clássico e Volume Brasileiro.</p>
-          <a href="https://wa.me/55449991843935" class="btn-whatsapp" target="_blank">
-            💬 Agendar: (44) 99918-43935
-          </a>
-        </article>
-
-        <!-- Profissional 2 -->
-        <article class="professional-card">
-          <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=300&q=80" alt="Foto da Lash Designer">
-          <h3>Beatriz Beauty</h3>
-          <p>Mestre em Tufinhos, Volume Russo e Mega Volume.</p>
-          <a href="#" class="btn-whatsapp">
-            💬 Agendar: (44) 98888-7777
-          </a>
-        </article>
-      </div>
-    </section>
-
-  </div>
-
-  <footer>
-    <p>&copy; 2026 Guia das Extensões de Cílios. Todos os direitos reservados.</p>
-  </footer>
-
-</body>
-</html>
+      color: var(--primary

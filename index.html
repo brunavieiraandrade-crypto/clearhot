@@ -1,33 +1,174 @@
 
-<!DOCTYPE html>
-<html 1ang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" 
-        content="width=device-width, initial-scale=1.0">
-        <title>site lesh</title>
-    </head>
-    <body>
-        <header>
-            <h1>mundo das leshes</h1>
-            <p>tudo sobre cilio tufinho e fio a fio</p> 
-            <style>
-                    header{
-                        background-color: rgb(0, 255, 255);
-                        color:rgb(238, 89, 213);
-                        text-align:center;  
-                    }
-                    main {
-                       background-color: rgb(238, 89, 213)
-                       color:aqua
-                    }
-                </style>
-            </header>
-        <main>
-            <h2>primeiro post</h2>
-            <p>Por:Bruna vieira</p>
-            <p>Bouas vindas ao meu site sobre o mundo do cilios tufinho e fio a fio</p>
-        </main>
-    </body>
- </html>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #fff8fa;
+    color: #49343d;
+    line-height: 1.7;
+}
+
+header {
+    background: #e9b9ca;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    color: #713c53;
+    margin-bottom: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #573044;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: white;
+}
+
+.hero {
+    min-height: 450px;
+    background:
+        linear-gradient(#0005, #0005),
+        url("imagens/capa.jpg") center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 30px;
+}
+
+.hero-content h2 {
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.botao {
+    display: inline-block;
+    margin-top: 20px;
+    background: #bd718f;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+}
+
+section {
+    padding: 55px 8%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+section h2 {
+    color: #a65376;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+section h3 {
+    color: #a65376;
+    margin: 20px 0 10px;
+}
+
+section img {
+    width: 100%;
+    max-height: 350px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin: 20px 0;
+}
+
+li {
+    margin-left: 25px;
+}
+
+.comparacao {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    text-align: center;
+}
+
+.comparacao img {
+    height: 250px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+    background: white;
+}
+
+td, th {
+    border: 1px solid #e8c6d3;
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background: #e9b9ca;
+}
+
+details {
+    background: white;
+    padding: 18px;
+    margin: 12px 0;
+    border-radius: 10px;
+}
+
+summary {
+    cursor: pointer;
+    font-weight: bold;
+    color: #a65376;
+}
+
+footer {
+    background: #713c53;
+    color: white;
+    padding: 35px;
+    text-align: center;
+}
+
+@media (max-width: 650px) {
+    .comparacao {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-content h2 {
+        font-size: 27px;
+    }
+
+    nav {
+        gap: 12px;
+    }
+
+    section {
+        padding: 35px 6%;
+    }
+
+    table {
+        font-size: 13px;
+    }
+}
+
             

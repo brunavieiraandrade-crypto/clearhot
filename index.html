@@ -11,11 +11,12 @@
       --accent-color: #bc6c25;
       --text-color: #333333;
       --whatsapp-color: #25D366;
+      --bg-color: #fdfbf7;
     }
 
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #fdfbf7;
+      background-color: var(--bg-color);
       color: var(--text-color);
       margin: 0;
       padding: 0;
@@ -26,22 +27,27 @@
       background-color: var(--primary-color);
       color: white;
       text-align: center;
-      padding: 3rem 1rem;
-      background-image: linear-gradient(rgba(212, 163, 115, 0.9), rgba(212, 163, 115, 0.9)), url('https://images.unsplash.com/photo-1512413914568-150280eb4c71?w=1200&q=80');
+      padding: 4rem 1rem;
+      background-image: linear-gradient(rgba(212, 163, 115, 0.85), rgba(212, 163, 115, 0.85)), url('https://images.unsplash.com/photo-1512413914568-150280eb4c71?w=1200&q=80');
       background-size: cover;
       background-position: center;
     }
 
     header h1 {
       margin: 0;
-      font-size: 2.8rem;
-      text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+      font-size: 3rem;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    }
+    
+    header p {
+      font-size: 1.2rem;
+      margin-top: 10px;
     }
 
     .container {
       max-width: 1100px;
       margin: 0 auto;
-      padding: 2rem 1rem;
+      padding: 3rem 1rem;
     }
 
     section {
@@ -53,14 +59,14 @@
       color: var(--accent-color);
       border-bottom: 2px solid var(--secondary-color);
       padding-bottom: 0.5rem;
-      margin-bottom: 2rem;
-      font-size: 2rem;
+      margin-bottom: 2.5rem;
+      font-size: 2.2rem;
     }
 
     /* Grid para as técnicas */
     .techniques-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
       gap: 2rem;
     }
 
@@ -79,7 +85,7 @@
 
     .technique-card img {
       width: 100%;
-      height: 220px;
+      height: 250px;
       object-fit: cover;
     }
 
@@ -89,5 +95,146 @@
 
     .technique-content h3 {
       margin-top: 0;
-      color: var(--primary
+      color: var(--primary-color);
+      font-size: 1.5rem;
     }
+
+    /* Seção de Comparação */
+    .comparison-section {
+      background-color: white;
+      padding: 3rem;
+      border-radius: 15px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+      margin-top: 2rem;
+    }
+
+    .comparison-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+    }
+
+    @media (max-width: 768px) {
+      .comparison-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .comparison-item h3 {
+      color: var(--accent-color);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .comparison-item ul {
+      padding-left: 20px;
+    }
+
+    .comparison-item li {
+      margin-bottom: 10px;
+    }
+
+    /* Footer e Botão WhatsApp */
+    .btn-whatsapp {
+      display: inline-block;
+      background-color: var(--whatsapp-color);
+      color: white;
+      text-decoration: none;
+      padding: 15px 30px;
+      border-radius: 30px;
+      font-weight: bold;
+      font-size: 1.1rem;
+      margin-top: 20px;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn-whatsapp:hover {
+      background-color: #1ebe57;
+    }
+
+    .cta-container {
+      text-align: center;
+      margin-top: 3rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Estúdio de Cílios</h1>
+    <p>Especialistas em Extensão e Embelezamento do Olhar</p>
+  </header>
+
+  <div class="container">
+    <section id="galeria-tecnicas">
+      <h2>Nossos Trabalhos</h2>
+      <div class="techniques-grid">
+        <!-- Card 1: Fio a Fio -->
+        <div class="technique-card">
+          <img src="https://images.unsplash.com/photo-1587777553556-912a77a94132?w=600&q=80" alt="Extensão de cílios Fio a Fio">
+          <div class="technique-content">
+            <h3>Clássico Fio a Fio</h3>
+            <p>Um olhar elegante e discreto. Ideal para quem busca efeito de rímel, mantendo a naturalidade sem exageros.</p>
+          </div>
+        </div>
+
+        <!-- Card 2: Volume Brasileiro/Russo -->
+        <div class="technique-card">
+          <img src="https://images.unsplash.com/photo-1596755389378-c31d21fd1273?w=600&q=80" alt="Volume de cílios">
+          <div class="technique-content">
+            <h3>Volume</h3>
+            <p>Técnicas avançadas (como Russo ou Brasileiro) para preenchimento total e um olhar marcante, construído com fios ultrafinos.</p>
+          </div>
+        </div>
+
+        <!-- Card 3: Detalhe/Manutenção -->
+        <div class="technique-card">
+          <img src="https://images.unsplash.com/photo-1629731671981-64ebbf8fbfbe?w=600&q=80" alt="Detalhe dos cílios">
+          <div class="technique-content">
+            <h3>Isolamento Perfeito</h3>
+            <p>Preservamos a saúde do seu fio natural através da técnica de isolamento, garantindo que não haja fios colados uns aos outros.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="comparacao" class="comparison-section">
+      <h2>Entenda as Diferenças: Fio a Fio vs. Tufinho</h2>
+      
+      <div class="comparison-grid">
+        <!-- Coluna Fio a Fio -->
+        <div class="comparison-item">
+          <h3>✨ Extensão Fio a Fio (Técnica Profissional)</h3>
+          <p>Técnica onde um único fio de extensão (ou um leque/fan leve feito na hora) é acoplado de forma <strong>isolada</strong> em apenas um cílio natural.</p>
+          <ul>
+            <li><strong>Naturalidade:</strong> Proporciona um acabamento impecável, semelhante ao efeito de rímel.</li>
+            <li><strong>Saúde Ocular:</strong> O isolamento perfeito permite que o cílio natural cumpra seu ciclo de crescimento e queda sem ser puxado.</li>
+            <li><strong>Leveza:</strong> Os fios utilizados são extremamente leves e não pesam nas pálpebras.</li>
+            <li><strong>Durabilidade:</strong> Pode durar de 20 a 30 dias até a próxima manutenção corretiva, acompanhando a renovação celular.</li>
+          </ul>
+        </div>
+
+        <!-- Coluna Tufinho -->
+        <div class="comparison-item">
+          <h3>⚠️ Tufinho (Aplicação Express/Maquiagem)</h3>
+          <p>Pequenos agrupamentos pré-fabricados de fios grossos unidos por um nó na base. Frequentemente colados sobre a pele ou sobre vários cílios de uma vez.</p>
+          <ul>
+            <li><strong>Agilidade:</strong> A aplicação é muito rápida (geralmente menos de 30 minutos) e o custo é inferior.</li>
+            <li><strong>Volume Imediato:</strong> Entrega um volume drástico, mas com acabamento mais artificial devido à base grossa do tufo.</li>
+            <li><strong>Riscos à Saúde do Fio:</strong> Como a cola adere a vários fios naturais simultaneamente, quando um fio natural cresce ou cai, ele traciona (puxa) os fios vizinhos, podendo causar falhas e quebra permanente.</li>
+            <li><strong>Recomendação:</strong> Ideal apenas para uso temporário (eventos, maquiagens), sendo removido no mesmo dia ou em poucos dias. Não é considerado extensão profissional a longo prazo.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <div class="cta-container">
+      <h2>Pronta para transformar seu olhar com segurança?</h2>
+      <p>Agende sua avaliação e descubra a técnica ideal para o seu perfil e saúde dos seus fios.</p>
+      <a href="#" class="btn-whatsapp">Agendar via WhatsApp</a>
+    </div>
+  </div>
+
+</body>
+</html>
